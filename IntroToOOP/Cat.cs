@@ -43,6 +43,7 @@ namespace IntroToOOP
         {
             //This is an example of a default constructor. A default constructor takes not arguments or parameters
             //Create oject without setting any values to fields
+            //If more than 1 constructor, must include default
         }
 
         public Cat(string name, int age, string furColor)
