@@ -58,7 +58,7 @@ namespace IntroToOOP
             {
                 isHungry = false;
             }
-            Console.WriteLine("Is the cat hungry?" + isHungry);
+            Console.WriteLine("Is the cat hungry? " + isHungry);
         }
     }
 }
