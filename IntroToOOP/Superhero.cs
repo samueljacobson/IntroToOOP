@@ -62,6 +62,25 @@ namespace IntroToOOP
         }
 
         
-        //2 Methods
+        //3 Methods
+        public void BattleNemesis()
+        {
+            this.StrengthLevel -= 10;  //using public (Pascal case)
+            this.HasCape = false;
+            this.Costume = "tattered";
+        }
+
+        public void AllyGained()
+        {
+            this.StrengthLevel += 10;
+            this.HasCape = false;
+            Console.WriteLine("Thank you for being a friend.");
+        }
+
+        public void GetHealthy(string costume, int strengthLevel)
+        {
+            this.Costume = costume;
+            this.StrengthLevel = strengthLevel;
+        }
     }
 }

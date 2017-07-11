@@ -34,6 +34,29 @@ namespace IntroToOOP
             //Thinking about objects in real life, create 3 examples with 5 states and 5 behaviors
 
 
+            Superhero firstHero = new Superhero();  //to instantiate an object
+            firstHero.StrengthLevel = 100;
+            firstHero.HasCape = true;
+
+            firstHero.BattleNemesis();
+            Console.WriteLine(firstHero.HasCape);  //returns false
+            Console.WriteLine(firstHero.StrengthLevel);  //returns 90
+
+            firstHero.BattleNemesis();
+            Console.WriteLine(firstHero.HasCape);  //returns false
+            Console.WriteLine(firstHero.StrengthLevel);  //returns 80
+
+            Superhero secondHero = new Superhero("Diamond Daniel");
+            Console.WriteLine(secondHero.StrengthLevel);    //returns 100 (default, see constructor)
+
+            secondHero.AllyGained();
+            Console.WriteLine(secondHero.StrengthLevel);    //returns 110
+
+            Superhero thirdHero = new Superhero("black Kevlar armor", "The Best Ever", 1000, "Being the best", false);
+
+            thirdHero.BattleNemesis();
+            Console.WriteLine("Oh no! Now my costume is " + thirdHero.Costume);     //returns tattered
+            Console.WriteLine("And my strength has diminished to " + thirdHero.StrengthLevel);  //returns 990
         }
     }
 }
